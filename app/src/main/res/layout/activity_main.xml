@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/nhapSo1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập số thứ nhất"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <EditText
+        android:id="@+id/nhapSo2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/nhapSo1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nhapSo1"
+        app:layout_constraintTop_toBottomOf="@+id/nhapSo1"
+        android:hint="Nhập số thứ hai"/>
+
+    <Button
+        android:id="@+id/phepCong"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cộng"
+        app:layout_constraintEnd_toEndOf="@+id/nhapSo2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nhapSo2"
+        app:layout_constraintTop_toBottomOf="@+id/nhapSo2" />
+
+    <Button
+        android:id="@+id/phepTru"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Trừ"
+        app:layout_constraintEnd_toEndOf="@+id/nhapSo2"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toStartOf="@+id/nhapSo2"
+        app:layout_constraintTop_toBottomOf="@+id/nhapSo2" />
+
+    <Button
+        android:id="@+id/phepNhan"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nhân"
+        app:layout_constraintEnd_toEndOf="@+id/nhapSo2"
+        app:layout_constraintHorizontal_bias="0.667"
+        app:layout_constraintStart_toStartOf="@+id/nhapSo2"
+        app:layout_constraintTop_toBottomOf="@+id/nhapSo2" />
+
+    <Button
+        android:id="@+id/phepChia"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Chia"
+        app:layout_constraintEnd_toEndOf="@+id/nhapSo2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/nhapSo2"
+        app:layout_constraintTop_toBottomOf="@+id/nhapSo2" />
+
+    <TextView
+        android:id="@+id/ketQua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/nhapSo2"
+        app:layout_constraintStart_toStartOf="@+id/nhapSo2"
+        app:layout_constraintTop_toBottomOf="@+id/nhapSo2"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả"
+        app:layout_constraintBottom_toBottomOf="@+id/ketQua"
+        app:layout_constraintEnd_toStartOf="@+id/ketQua"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ketQua" />
+</androidx.constraintlayout.widget.ConstraintLayout>
